@@ -1,0 +1,11 @@
+setwd("C:/R_Analisis/Datos_Practica")
+
+bd=read.csv("Practica_ODD19_SCiAC_errores.csv",sep=";",header=T)
+head(bd)
+summary(bd)
+mean(bd$Ta_corporal,na.rm=T)
+sd(bd$Ta_corporal,na.rm =T )
+boxplot(Ta_corporal ~ Zona, data=bd, xlab="Zona", ylab="Temperatura corporal(°C)")
+boxplot(Ta_corporal~Zona, data=bd, xlab="Zona", ylab="Temperatura corporal(°C)",outline=FALSE )
+boxplot(Ta_corporal~Zona,data =bd,xlab="Zona",ylab="Temperatura corporal(C)" )
+head(bd)
